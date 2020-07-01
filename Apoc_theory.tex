@@ -1,0 +1,117 @@
+\documentclass[oneside,11pt,chapter]{oblivoir}%chapter
+\setlength\cftsectionnumwidth{3em}
+% \setlength\cftpartnumwidth{5em}
+% \setlength\cftchapternumwidth{4em}
+% \setlength\cftsectionnumwidth{4em}
+
+
+% \documentclass[oneside,11pt]{memoir} % Font size
+% \usepackage{kotex}
+% \setlength\cftsectionnumwidth{3em}
+% \input{structure.tex}
+
+% \setlength\cftpartnumwidth{3em}
+% \setlength\cftchapternumwidth{2em}
+
+
+%https://tex.stackexchange.com/questions/248266/overlapping-part-numbering-in-table-of-contents
+
+
+
+
+\usepackage{amsmath}
+\usepackage{mnsymbol}
+
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{ulem}
+\usepackage{xcolor}
+
+
+%\usepackage{amssymb}
+
+\newlist{num}{enumerate}{1}
+\setlist[num]{label=}
+
+
+\addcontentsline{toc}{chapter}{Preface}
+% - for Examinee
+% for general
+
+\title{Apoc Theory for Examinee}
+\author{Apoc}
+
+
+\begin{document} 
+
+    \maketitle
+
+    \include{Preface}
+
+
+
+    \tableofcontents
+
+    \newpage
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%examinee
+    \part{For examinee}
+
+    \chapter{정리론}
+
+    \include{examinee/clean}
+    
+    \chapter{학습공학}
+    
+    \include{examinee/LearningEngineering}
+    
+
+    \chapter{실패와 재도전}
+    \include{examinee/FailAndRestart}
+    
+    \chapter{교재 이야기}
+    \include{examinee/TextbookStory}
+    
+    \chapter{교재 뒷담화}
+    \include{examinee/TextbookBackbite}
+
+    \chapter{일지 가이드}
+    \include{examinee/JournalGuide}
+
+    \chapter{etc}
+    
+    \include{examinee/etc1} 
+    \include{examinee/etc2} 
+    
+    \chapter{상담}
+
+    \include{examinee/consulting}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%general
+
+    % \part{general}
+
+    % \chapter{세뇌론}
+    % \include{general/MindControl}
+
+    % \chapter{미래공학}
+    % \include{general/futureEngineering} 
+
+
+    % \chapter{중2론}
+    % \include{general/j2}
+
+
+    % \chapter{헬조선}
+    % \include{general/HellKorea}
+    
+    % \chapter{etc}
+    % \include{general/etc1}
+    % \include{general/etc2}
+    % \include{general/etc3}
+
+\end{document}
+
+%https://www.overleaf.com/learn/latex/Hyperlinks  
+%하이퍼링크
+
